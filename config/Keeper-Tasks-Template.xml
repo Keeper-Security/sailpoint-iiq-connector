@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  Aggregation tasks for one Keeper application. Not shipped: build_app_xml.py
+  generates config/Keeper-Tasks.xml from it with __APP_NAME__ set to
+  "Keeper Security" (install.sh -a renames that for other applications).
+-->
+<sailpoint>
+  <!-- All Keeper entitlement types in one group aggregation -->
+  <TaskDefinition formPath="/monitor/tasks/accountGroupAggregationTask.xhtml" name="__APP_NAME__ Entitlement Aggregation" resultAction="Delete" subType="task_item_type_acct_grp_aggregation" type="AccountGroupAggregation">
+    <Attributes>
+      <Map>
+        <!-- Applies renames made in Keeper to existing entitlements' display names -->
+        <entry key="accountGroupRefreshRule" value="Keeper Entitlement Refresh"/>
+        <entry key="aggregationType" value="group"/>
+        <entry key="applications" value="__APP_NAME__"/>
+        <entry key="checkDeleted" value="true"/>
+        <entry key="deltaAggregation" value="false"/>
+        <entry key="enablePartitioning" value="false"/>
+        <entry key="groupSchema">
+          <value>
+            <Attributes>
+              <Map>
+                <entry key="__APP_NAME__">
+                  <value>
+                    <List>
+                      <String>node</String>
+                      <String>team</String>
+                      <String>role</String>
+                      <String>folder</String>
+                      <String>record</String>
+                    </List>
+                  </value>
+                </entry>
+              </Map>
+            </Attributes>
+          </value>
+        </entry>
+        <entry key="haltOnMaxError" value="false"/>
+        <entry key="promoteClassifications" value="false"/>
+        <entry key="taskCompletionEmailNotify" value="Disabled"/>
+      </Map>
+    </Attributes>
+    <Description>Aggregate Keeper nodes, teams, roles, folders and records into the Entitlement Catalog</Description>
+    <Parent>
+      <Reference class="sailpoint.object.TaskDefinition" name="Account Group Aggregation"/>
+    </Parent>
+  </TaskDefinition>
+
+  <TaskDefinition formPath="/monitor/tasks/accountAggregationTask.xhtml" name="__APP_NAME__ Account Aggregation" resultAction="Delete" subType="task_item_type_acct_aggregation" type="AccountAggregation">
+    <Attributes>
+      <Map>
+        <entry key="applications" value="__APP_NAME__"/>
+        <entry key="checkDeleted" value="true"/>
+        <entry key="checkHistory" value="false"/>
+        <entry key="checkPolicies" value="false"/>
+        <!-- Needed for Manage User Access > Remove Access to list current entitlements -->
+        <entry key="correlateEntitlements" value="true"/>
+        <entry key="deltaAggregation" value="false"/>
+        <entry key="enablePartitioning" value="false"/>
+        <entry key="haltOnMaxError" value="false"/>
+        <entry key="noOptimizeReaggregation" value="false"/>
+        <entry key="promoteManagedAttributes" value="false"/>
+        <entry key="refreshScorecard" value="false"/>
+        <entry key="sequential" value="false"/>
+        <entry key="taskCompletionEmailNotify" value="Disabled"/>
+      </Map>
+    </Attributes>
+    <Description>Aggregate Keeper enterprise users into IdentityIQ</Description>
+    <Parent>
+      <Reference class="sailpoint.object.TaskDefinition" name="Account Aggregation"/>
+    </Parent>
+  </TaskDefinition>
+
+  <!-- One-click full aggregation: entitlements first, then accounts, then the
+       Lifecycle Manager full text index so new entitlements can be searched,
+       then identity request maintenance so completed access requests close -->
+  <TaskDefinition executor="sailpoint.task.SequentialTaskExecutor" formPath="/monitor/tasks/sequentialTask.xhtml" name="__APP_NAME__ Full Aggregation" progressInterval="5000" progressMode="String" resultAction="Delete" subType="task_item_type_generic" type="Generic">
+    <Attributes>
+      <Map>
+        <entry key="exitOnError" value="true"/>
+        <entry key="taskList" value="__APP_NAME__ Entitlement Aggregation,__APP_NAME__ Account Aggregation,Full Text Index Refresh,Perform Identity Request Maintenance"/>
+        <entry key="taskCompletionEmailNotify" value="Disabled"/>
+      </Map>
+    </Attributes>
+    <Description>Run Keeper entitlement aggregation, Keeper account aggregation, Full Text Index Refresh, then Perform Identity Request Maintenance</Description>
+    <Parent>
+      <Reference class="sailpoint.object.TaskDefinition" name="Sequential Task Launcher"/>
+    </Parent>
+  </TaskDefinition>
+</sailpoint>

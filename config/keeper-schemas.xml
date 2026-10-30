@@ -1,0 +1,153 @@
+  <ProvisioningForms>
+    <Form name="Keeper Create Account" objectType="account" type="Create">
+      <Attributes>
+        <Map>
+          <entry key="pageTitle" value="Keeper Create Account"/>
+        </Map>
+      </Attributes>
+      <Section name="Keeper Account">
+        <Field displayName="Email" helpKey="Primary email; becomes the Keeper login" name="email" required="true" type="string">
+          <Script>
+            <Source>return identity == null ? null : identity.getEmail();</Source>
+          </Script>
+        </Field>
+        <Field displayName="Name" helpKey="Display name in Keeper" name="name" required="true" type="string">
+          <Script>
+            <Source>return identity == null ? null : identity.getDisplayName();</Source>
+          </Script>
+        </Field>
+        <Field displayName="Job Title" name="jobTitle" type="string"/>
+        <Field displayName="Node" helpKey="Keeper enterprise node the user is placed in" name="node" required="true" type="string">
+          <AllowedValuesDefinition>
+            <Script>
+              <Source>
+                import java.util.ArrayList;
+                import java.util.List;
+                import sailpoint.object.Filter;
+                import sailpoint.object.ManagedAttribute;
+                import sailpoint.object.QueryOptions;
+
+                QueryOptions qo = new QueryOptions();
+                qo.addFilter(Filter.eq("application.name", application.getName()));
+                qo.addFilter(Filter.eq("type", "node"));
+                qo.setOrderBy("displayName");
+                List values = new ArrayList();
+                for (ManagedAttribute node : context.getObjects(ManagedAttribute.class, qo)) {
+                    List pair = new ArrayList();
+                    pair.add(node.getValue());
+                    pair.add(node.getDisplayableName());
+                    values.add(pair);
+                }
+                return values;
+              </Source>
+            </Script>
+          </AllowedValuesDefinition>
+          <Script>
+            <Source>
+              import sailpoint.object.Filter;
+              import sailpoint.object.ManagedAttribute;
+              import sailpoint.object.QueryOptions;
+
+              // Default to the enterprise root node (the node without a parent).
+              QueryOptions qo = new QueryOptions();
+              qo.addFilter(Filter.eq("application.name", application.getName()));
+              qo.addFilter(Filter.eq("type", "node"));
+              for (ManagedAttribute node : context.getObjects(ManagedAttribute.class, qo)) {
+                  if (node.getAttribute("parentId") == null) {
+                      return node.getValue();
+                  }
+              }
+              return null;
+            </Source>
+          </Script>
+        </Field>
+      </Section>
+    </Form>
+  </ProvisioningForms>
+  <Schemas>
+    <Schema __ID_account__displayAttribute="name" identityAttribute="userId" nativeObjectType="account" objectType="account">
+      <AttributeDefinition name="userId" type="string">
+        <Description>Keeper enterprise user_id (stable numeric ID)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition name="email" required="true" type="string">
+        <Description>Primary email address</Description>
+      </AttributeDefinition>
+      <AttributeDefinition name="name" required="true" type="string">
+        <Description>Full name as stored in Keeper</Description>
+      </AttributeDefinition>
+      <AttributeDefinition name="status" type="string">
+        <Description>Keeper user status (Invited, Active, Locked, ...)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition name="jobTitle" type="string">
+        <Description>Job title</Description>
+      </AttributeDefinition>
+      <AttributeDefinition name="twoFactorEnabled" type="boolean">
+        <Description>Whether 2FA is enabled on the vault</Description>
+      </AttributeDefinition>
+      <AttributeDefinition multi="true" name="aliases" type="string">
+        <Description>Alternate email aliases (read-only)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" name="node" required="true" schemaObjectType="node" type="string">
+        <Description>Enterprise node the user belongs to (single-valued)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="teams" schemaObjectType="team" type="string">
+        <Description>Team memberships (team_uid values)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="roles" schemaObjectType="role" type="string">
+        <Description>Direct role memberships (role_id values)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="folders" schemaObjectType="folder" type="string">
+        <Description>Folder shares as folderUid:permission (classic NP|MU|MR|MUR, NSF VW|SM|CM|CSM|FM)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="records" schemaObjectType="record" type="string">
+        <Description>Records shared directly to the user, as recordUid:permission</Description>
+      </AttributeDefinition>
+    </Schema>
+    <Schema __ID_node__aggregationType="group" displayAttribute="path" identityAttribute="id" nativeObjectType="node" objectType="node">
+      <AttributeDefinition name="id" type="string"/>
+      <AttributeDefinition name="name" type="string"/>
+      <AttributeDefinition name="path" type="string"/>
+      <AttributeDefinition name="parentId" type="string"/>
+      <AttributeDefinition name="parentPath" type="string"/>
+      <AttributeDefinition name="isolated" type="boolean"/>
+    </Schema>
+    <Schema __ID_team__aggregationType="group" displayAttribute="name" identityAttribute="id" nativeObjectType="team" objectType="team">
+      <AttributeDefinition name="id" type="string"/>
+      <AttributeDefinition name="name" type="string"/>
+      <AttributeDefinition name="nodeId" type="string"/>
+      <AttributeDefinition name="nodePath" type="string"/>
+      <AttributeDefinition name="restricts" type="string"/>
+      <AttributeDefinition multi="true" name="folders" type="string">
+        <Description>Folder shares granted to the team, as folderUid:permission</Description>
+      </AttributeDefinition>
+    </Schema>
+    <Schema __ID_role__aggregationType="group" displayAttribute="name" identityAttribute="id" nativeObjectType="role" objectType="role">
+      <AttributeDefinition name="id" type="string"/>
+      <AttributeDefinition name="name" type="string"/>
+      <AttributeDefinition name="nodeId" type="string"/>
+      <AttributeDefinition name="nodePath" type="string"/>
+      <AttributeDefinition name="admin" type="boolean"/>
+      <AttributeDefinition name="defaultRole" type="boolean"/>
+      <AttributeDefinition name="visibleBelow" type="boolean"/>
+    </Schema>
+    <Schema __ID_folder__aggregationType="group" displayAttribute="name" identityAttribute="id" nativeObjectType="folder" objectType="folder">
+      <AttributeDefinition name="id" type="string"/>
+      <AttributeDefinition name="uid" type="string"/>
+      <AttributeDefinition name="name" type="string"/>
+      <AttributeDefinition name="path" type="string"/>
+      <AttributeDefinition name="folderType" type="string"/>
+      <AttributeDefinition name="parentId" type="string"/>
+      <AttributeDefinition name="permission" type="string"/>
+      <AttributeDefinition name="permissionLabel" type="string"/>
+    </Schema>
+    <Schema __ID_record__aggregationType="group" displayAttribute="displayName" identityAttribute="id" nativeObjectType="record" objectType="record">
+      <AttributeDefinition name="id" type="string"/>
+      <AttributeDefinition name="displayName" type="string"/>
+      <AttributeDefinition name="name" type="string"/>
+      <AttributeDefinition name="record_uid" type="string"/>
+      <AttributeDefinition name="permission" type="string"/>
+      <AttributeDefinition name="record_category" type="string"/>
+      <AttributeDefinition name="type" type="string"/>
+      <AttributeDefinition name="path" type="string"/>
+    </Schema>
+  </Schemas>

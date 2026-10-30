@@ -1,0 +1,745 @@
+{
+ "command": "enterprise-info --users",
+ "data": [
+  {
+   "alias": [],
+   "email": "user25@example.com",
+   "job_title": "Engineer",
+   "name": "User 1",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 2,
+   "roles": [
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000009
+  },
+  {
+   "alias": [],
+   "email": "user3@example.com",
+   "job_title": "Engineer",
+   "name": "User 2",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000010
+  },
+  {
+   "alias": [],
+   "email": "user14@example.com",
+   "job_title": "Engineer",
+   "name": "User 3",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000011
+  },
+  {
+   "alias": [],
+   "email": "user23@example.com",
+   "job_title": "Engineer",
+   "name": "User 4",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000012
+  },
+  {
+   "alias": [],
+   "email": "user7@example.com",
+   "job_title": "Engineer",
+   "name": "User 5",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000013
+  },
+  {
+   "alias": [],
+   "email": "user24@example.com",
+   "name": "User 6",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Invited",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Pending transfer",
+   "user_id": 1000000000000014
+  },
+  {
+   "alias": [],
+   "email": "user16@example.com",
+   "name": "User 7",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000015
+  },
+  {
+   "alias": [],
+   "email": "user10@example.com",
+   "name": "User 8",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000016
+  },
+  {
+   "alias": [],
+   "email": "user12@example.com",
+   "job_title": "Engineer",
+   "name": "User 9",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000017
+  },
+  {
+   "alias": [],
+   "email": "user9@example.com",
+   "job_title": "Engineer",
+   "name": "User 10",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 1,
+   "teams": [
+    {
+     "team_name": "Team 1",
+     "team_uid": "mockuid000000000000001"
+    }
+   ],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000018
+  },
+  {
+   "2fa_enabled": true,
+   "alias": [],
+   "email": "user11@example.com",
+   "job_title": "Engineer",
+   "name": "User 11",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 2,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000019
+  },
+  {
+   "alias": [],
+   "email": "user17@example.com",
+   "job_title": "Engineer",
+   "name": "User 12",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000020
+  },
+  {
+   "alias": [],
+   "email": "user8@example.com",
+   "job_title": "Engineer",
+   "name": "User 13",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000021
+  },
+  {
+   "alias": [],
+   "email": "user27@example.com",
+   "job_title": "Engineer",
+   "name": "User 14",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 2,
+   "roles": [
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000022
+  },
+  {
+   "alias": [],
+   "email": "user6@example.com",
+   "job_title": "Engineer",
+   "name": "User 15",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000023
+  },
+  {
+   "alias": [],
+   "email": "user20@example.com",
+   "job_title": "Engineer",
+   "name": "User 16",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000024
+  },
+  {
+   "alias": [],
+   "email": "user21@example.com",
+   "job_title": "Engineer",
+   "name": "User 17",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 2,
+   "roles": [
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000025
+  },
+  {
+   "alias": [],
+   "email": "user1@example.com",
+   "job_title": "Engineer",
+   "name": "User 18",
+   "node": {
+    "node_id": "1000000000000001",
+    "node_name": "Example Org\\Node 0"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000026
+  },
+  {
+   "alias": [],
+   "email": "user2@example.com",
+   "name": "User 19",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 4,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000008",
+     "role_name": "Role 5"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000027
+  },
+  {
+   "alias": [],
+   "email": "service.account@example.com",
+   "job_title": "Engineer",
+   "name": "User 20",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000028
+  },
+  {
+   "alias": [],
+   "email": "user19@example.com",
+   "job_title": "Engineer",
+   "name": "User 21",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000029
+  },
+  {
+   "alias": [],
+   "email": "user18@example.com",
+   "job_title": "Engineer",
+   "name": "User 22",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 3,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 1,
+   "teams": [
+    {
+     "team_name": "Team 2",
+     "team_uid": "mockuid000000000000002"
+    }
+   ],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000030
+  },
+  {
+   "alias": [],
+   "email": "user13@example.com",
+   "job_title": "Engineer",
+   "name": "User 23",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Locked",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Pending transfer",
+   "user_id": 1000000000000031
+  },
+  {
+   "alias": [],
+   "email": "user22@example.com",
+   "job_title": "Engineer",
+   "name": "User 24",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Locked",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Pending transfer",
+   "user_id": 1000000000000032
+  },
+  {
+   "alias": [],
+   "email": "user5@example.com",
+   "job_title": "Engineer",
+   "name": "User 25",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000033
+  },
+  {
+   "alias": [],
+   "email": "user26@example.com",
+   "job_title": "Engineer",
+   "name": "User 26",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 1,
+   "roles": [
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Invited",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Pending transfer",
+   "user_id": 1000000000000034
+  },
+  {
+   "alias": [],
+   "email": "user4@example.com",
+   "job_title": "Engineer",
+   "name": "User 27",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 4,
+   "roles": [
+    {
+     "role_id": "1000000000000007",
+     "role_name": "Role 4"
+    },
+    {
+     "role_id": "1000000000000008",
+     "role_name": "Role 5"
+    },
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000035
+  },
+  {
+   "alias": [],
+   "email": "user15@example.com",
+   "job_title": "Engineer",
+   "name": "User 28",
+   "node": {
+    "node_id": "1000000000000002",
+    "node_name": "Example Org"
+   },
+   "role_count": 2,
+   "roles": [
+    {
+     "role_id": "1000000000000006",
+     "role_name": "Role 3"
+    },
+    {
+     "role_id": "1000000000000005",
+     "role_name": "Role 2"
+    }
+   ],
+   "status": "Active",
+   "team_count": 0,
+   "teams": [],
+   "transfer_status": "Transfer accepted",
+   "user_id": 1000000000000036
+  }
+ ],
+ "status": "success"
+}
