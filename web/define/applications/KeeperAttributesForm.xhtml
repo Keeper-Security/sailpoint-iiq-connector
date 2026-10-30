@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:sp="http://sailpoint.com/ui">
+
+<body>
+<ui:composition>
+    <script type="text/javascript">
+        helpKey = 'APPLICATION';
+    </script>
+
+    <f:view>
+        <h:outputText
+            styleClass="sectionHeader"
+            value="Keeper Connection Settings" />
+        <br />
+        <br />
+
+        <div class="spContent">
+            <table class="spTable" style="border: 0px" cellspacing="0">
+
+                <tr>
+                    <td class="titleColumn" valign="middle">
+                        <h:outputText
+                            style="padding:5px"
+                            value="Service Mode URL" />
+                        <h:outputText
+                            styleClass="requiredText"
+                            value="*" />
+                    </td>
+
+                    <td valign="middle">
+                        <h:inputText
+                            id="serviceUrl"
+                            value="#{applicationObject.attributes['serviceUrl']}"
+                            disabled="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            readonly="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            size="70"
+                            required="true"
+                            requiredMessage="Service Mode URL is required." />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titleColumn" valign="middle">
+                        <h:outputText
+                            style="padding:5px"
+                            value="API Key" />
+                        <h:outputText
+                            styleClass="requiredText"
+                            value="*" />
+                    </td>
+
+                    <td valign="middle">
+                        <h:inputSecret
+                            id="apiKey"
+                            value="#{applicationObject.attributes['apiKey']}"
+                            disabled="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            readonly="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            redisplay="true"
+                            size="70"
+                            required="true"
+                            requiredMessage="API Key is required." />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titleColumn" valign="middle">
+                        <h:outputText
+                            style="padding:5px"
+                            value="Poll Timeout (seconds)" />
+                    </td>
+
+                    <td valign="middle">
+                        <h:inputText
+                            id="pollTimeoutSeconds"
+                            value="#{applicationObject.attributes['pollTimeoutSeconds']}"
+                            disabled="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            readonly="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            size="10" />
+                        <h:outputText
+                            style="padding:5px"
+                            value="How long to wait for a Commander command. Default 60." />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titleColumn" valign="middle">
+                        <h:outputText
+                            style="padding:5px"
+                            value="Sync Cache TTL (seconds)" />
+                    </td>
+
+                    <td valign="middle">
+                        <h:inputText
+                            id="syncCacheTtlSeconds"
+                            value="#{applicationObject.attributes['syncCacheTtlSeconds']}"
+                            disabled="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            readonly="#{!sp:hasRight(facesContext, 'ManageApplication')}"
+                            size="10" />
+                        <h:outputText
+                            style="padding:5px"
+                            value="How long an enterprise/vault sync stays fresh. Default 30." />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </f:view>
+</ui:composition>
+</body>
+</html>

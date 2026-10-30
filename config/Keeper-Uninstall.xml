@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  Used by uninstall.sh: removes every "Keeper Security" application with its
+  aggregation tasks, task results, identity mapping sources and correlation,
+  the "Keeper Entitlement Refresh" rule, then the "Keeper Security"
+  application type. uninstall.sh deletes this rule after running it.
+-->
+<Rule language="beanshell" name="Keeper Security Uninstall">
+  <Source>
+    import java.util.ArrayList;
+    import java.util.Iterator;
+    import java.util.List;
+    import sailpoint.api.Terminator;
+    import sailpoint.object.Application;
+    import sailpoint.object.AttributeSource;
+    import sailpoint.object.Configuration;
+    import sailpoint.object.CorrelationConfig;
+    import sailpoint.object.Filter;
+    import sailpoint.object.ObjectAttribute;
+    import sailpoint.object.ObjectConfig;
+    import sailpoint.object.QueryOptions;
+    import sailpoint.object.Rule;
+    import sailpoint.object.TaskDefinition;
+    import sailpoint.object.TaskResult;
+
+    String type = "Keeper Security";
+    String[] taskSuffixes = { " Full Aggregation", " Account Aggregation", " Entitlement Aggregation" };
+    Terminator terminator = new Terminator(context);
+    List summary = new ArrayList();
+
+    QueryOptions appQuery = new QueryOptions();
+    appQuery.addFilter(Filter.eq("type", type));
+    List names = new ArrayList();
+    for (Iterator it = context.getObjects(Application.class, appQuery).iterator(); it.hasNext();) {
+        names.add(((Application) it.next()).getName());
+    }
+
+    // Identity mapping sources that read from these applications.
+    int sources = 0;
+    ObjectConfig identityConfig = context.getObjectByName(ObjectConfig.class, ObjectConfig.IDENTITY);
+    if (identityConfig != null &amp;&amp; identityConfig.getObjectAttributes() != null) {
+        for (Iterator atts = identityConfig.getObjectAttributes().iterator(); atts.hasNext();) {
+            List attSources = ((ObjectAttribute) atts.next()).getSources();
+            if (attSources == null) continue;
+            for (Iterator it = attSources.iterator(); it.hasNext();) {
+                Application source = ((AttributeSource) it.next()).getApplication();
+                if (source != null &amp;&amp; names.contains(source.getName())) {
+                    it.remove();
+                    sources++;
+                }
+            }
+        }
+        if (sources > 0) {
+            context.saveObject(identityConfig);
+            context.commitTransaction();
+        }
+    }
+    summary.add(sources + " identity mapping source(s)");
+
+    // Tasks for these applications: the shipped aggregation tasks (full aggregation
+    // first, as it runs the other two), then any other task named "&lt;app&gt; ..." or
+    // aggregating the application.
+    List taskNames = new ArrayList();
+    for (Iterator it = names.iterator(); it.hasNext();) {
+        String appName = (String) it.next();
+        for (int i = 0; i &lt; taskSuffixes.length; i++) taskNames.add(appName + taskSuffixes[i]);
+    }
+    for (Iterator it = context.getObjects(TaskDefinition.class, new QueryOptions()).iterator(); it.hasNext();) {
+        TaskDefinition task = (TaskDefinition) it.next();
+        Object apps = task.getArguments() == null ? null : task.getArguments().get("applications");
+        for (Iterator n = names.iterator(); n.hasNext();) {
+            String appName = (String) n.next();
+            if ((task.getName().startsWith(appName + " ") || appName.equals(apps)) &amp;&amp; !taskNames.contains(task.getName())) {
+                taskNames.add(task.getName());
+            }
+        }
+    }
+    int tasks = 0;
+    int results = 0;
+    for (Iterator it = taskNames.iterator(); it.hasNext();) {
+        String taskName = (String) it.next();
+        TaskDefinition task = context.getObjectByName(TaskDefinition.class, taskName);
+        if (task != null) {
+            terminator.deleteObject(task);
+            tasks++;
+        }
+        QueryOptions resultQuery = new QueryOptions();
+        resultQuery.addFilter(Filter.eq("name", taskName));
+        for (Iterator r = context.getObjects(TaskResult.class, resultQuery).iterator(); r.hasNext();) {
+            terminator.deleteObject((TaskResult) r.next());
+            results++;
+        }
+    }
+    summary.add(tasks + " task(s)");
+    summary.add(results + " task result(s)");
+
+    // Applications, with their accounts and entitlements.
+    for (Iterator it = names.iterator(); it.hasNext();) {
+        Application app = context.getObjectByName(Application.class, (String) it.next());
+        if (app != null) terminator.deleteObject(app);
+    }
+    summary.add(names.size() + " application(s) " + names);
+
+    CorrelationConfig correlation = context.getObjectByName(CorrelationConfig.class, "Keeper Security Email Correlation");
+    if (correlation != null) terminator.deleteObject(correlation);
+    summary.add((correlation != null ? 1 : 0) + " correlation(s)");
+
+    // The entitlement refresh rule the Entitlement Aggregation tasks used.
+    Rule refreshRule = context.getObjectByName(Rule.class, "Keeper Entitlement Refresh");
+    if (refreshRule != null) terminator.deleteObject(refreshRule);
+    summary.add((refreshRule != null ? 1 : 0) + " rule(s)");
+
+    // The application type.
+    int templates = 0;
+    Configuration registry = context.getObjectByName(Configuration.class, Configuration.CONNECTOR_REGISTRY);
+    List registered = registry == null ? null : (List) registry.getAttributes().get(Configuration.APPLICATION_TEMPLATES);
+    if (registered != null) {
+        for (Iterator it = registered.iterator(); it.hasNext();) {
+            if (type.equals(((Application) it.next()).getType())) {
+                it.remove();
+                templates++;
+            }
+        }
+        if (templates > 0) {
+            context.saveObject(registry);
+            context.commitTransaction();
+        }
+    }
+    summary.add(templates + " application type(s)");
+
+    context.commitTransaction();
+    return "Removed: " + summary;
+  </Source>
+</Rule>

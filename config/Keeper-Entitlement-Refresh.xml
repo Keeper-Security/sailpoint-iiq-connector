@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  Group aggregation refresh rule for Keeper Security entitlements, run by the
+  Entitlement Aggregation task (accountGroupRefreshRule). IdentityIQ sets an
+  entitlement's display name only when it creates it; this rule applies the
+  current Keeper name on every aggregation, so renamed records, folders, teams,
+  roles and nodes show their new names. install.sh imports it; uninstall.sh
+  deletes it.
+-->
+<Rule language="beanshell" name="Keeper Entitlement Refresh" type="GroupAggregationRefresh">
+  <Description>Updates the display name of Keeper Security entitlements to the current name in Keeper.</Description>
+  <Source>
+    String name = obj == null ? null : obj.getDisplayName();
+    if (accountGroup != null &amp;&amp; name != null &amp;&amp; !name.equals(accountGroup.getDisplayName())) {
+        accountGroup.setDisplayName(name);
+    }
+    return accountGroup;
+  </Source>
+</Rule>

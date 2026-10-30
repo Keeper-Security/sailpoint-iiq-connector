@@ -1,0 +1,2841 @@
+{
+ "command": "tree -s -ns -r -v",
+ "data": {
+  "share_permissions_key": {
+   "classic": {
+    "CE": "Can Edit",
+    "CS": "Can Share",
+    "MR": "Can Manage Records",
+    "MU": "Can Manage Users",
+    "OW": "Owner",
+    "RO": "Read-Only"
+   },
+   "nsf": {
+    "CM": "Content Manager",
+    "CSM": "Content + Share Manager",
+    "FM": "Full Manager",
+    "OW": "Owner",
+    "SM": "Share Manager",
+    "VW": "Viewer"
+   }
+  },
+  "tree": {
+   "children": [
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "kind": "record",
+         "name": "Record record 1",
+         "path": "/Folder shared folder 1/Folder folder 1/Record record 1",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "user7@example.com",
+            "permissions": [
+             "RO"
+            ]
+           },
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000003"
+        },
+        {
+         "kind": "record",
+         "name": "Record record 2",
+         "path": "/Folder shared folder 1/Folder folder 1/Record record 2",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000004"
+        },
+        {
+         "kind": "record",
+         "name": "Record record 3",
+         "path": "/Folder shared folder 1/Folder folder 1/Record record 3",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "user28@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000005"
+        },
+        {
+         "kind": "record",
+         "name": "Record record 4",
+         "path": "/Folder shared folder 1/Folder folder 1/Record record 4",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000006"
+        },
+        {
+         "kind": "record",
+         "name": "Record record 5",
+         "path": "/Folder shared folder 1/Folder folder 1/Record record 5",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000007"
+        },
+        {
+         "kind": "record",
+         "name": "Record record 6",
+         "path": "/Folder shared folder 1/Folder folder 1/Record record 6",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000008"
+        }
+       ],
+       "kind": "folder",
+       "name": "Folder folder 1",
+       "path": "/Folder shared folder 1/Folder folder 1",
+       "uid": "mockuid000000000000009"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 7",
+       "path": "/Folder shared folder 1/Record record 7",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000010"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 8",
+       "path": "/Folder shared folder 1/Record record 8",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000011"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 9",
+       "path": "/Folder shared folder 1/Record record 9",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000012"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 10",
+       "path": "/Folder shared folder 1/Record record 10",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000013"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 11",
+       "path": "/Folder shared folder 1/Record record 11",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000014"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 12",
+       "path": "/Folder shared folder 1/Record record 12",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000015"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 1",
+     "path": "/Folder shared folder 1",
+     "share_permissions": {
+      "record_permissions": [],
+      "user_permissions": [
+       "MU",
+       "MR"
+      ],
+      "users": [
+       {
+        "email": "user28@example.com",
+        "permissions": [
+         "MR"
+        ],
+        "uid": "mockuid000000000000016"
+       },
+       {
+        "email": "user29@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000017"
+       },
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       },
+       {
+        "email": "user7@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000019"
+       },
+       {
+        "email": "user26@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000020"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000021"
+    },
+    {
+     "kind": "shared_folder",
+     "name": "Folder shared folder 2",
+     "path": "/Folder shared folder 2",
+     "share_permissions": {
+      "record_permissions": [
+       "RO"
+      ],
+      "user_permissions": [],
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000022"
+    },
+    {
+     "children": [
+      {
+       "kind": "record",
+       "name": "Record record 13",
+       "path": "/Folder shared folder 3/Record record 13",
+       "record_type": "pamNetworkConfiguration",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000023"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 3",
+     "path": "/Folder shared folder 3",
+     "share_permissions": {
+      "record_permissions": [
+       "RO"
+      ],
+      "user_permissions": [],
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000024"
+    },
+    {
+     "children": [
+      {
+       "kind": "record",
+       "name": "Record record 14",
+       "path": "/Folder shared folder 4/Record record 14",
+       "record_type": "sshKeys",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user9@example.com",
+          "permissions": [
+           "RO"
+          ]
+         },
+         {
+          "email": "user5@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000025"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 15",
+       "path": "/Folder shared folder 4/Record record 15",
+       "record_type": "sshKeys",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user5@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000026"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 4",
+     "path": "/Folder shared folder 4",
+     "share_permissions": {
+      "record_permissions": [
+       "RO"
+      ],
+      "user_permissions": [],
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000027"
+    },
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "children": [
+          {
+           "children": [
+            {
+             "kind": "record",
+             "name": "Record record 16",
+             "path": "/Folder shared folder 5/Folder folder 2/Folder folder 3/Folder folder 4/Record record 16",
+             "record_type": "login",
+             "share_permissions": {
+              "users": [
+               {
+                "email": "service.account@example.com",
+                "permissions": [
+                 "OW"
+                ]
+               }
+              ]
+             },
+             "uid": "mockuid000000000000028"
+            }
+           ],
+           "kind": "folder",
+           "name": "Folder folder 4",
+           "path": "/Folder shared folder 5/Folder folder 2/Folder folder 3/Folder folder 4",
+           "uid": "mockuid000000000000029"
+          },
+          {
+           "kind": "record",
+           "name": "Record record 17",
+           "path": "/Folder shared folder 5/Folder folder 2/Folder folder 3/Record record 17",
+           "record_type": "login",
+           "share_permissions": {
+            "users": [
+             {
+              "email": "service.account@example.com",
+              "permissions": [
+               "OW"
+              ]
+             }
+            ]
+           },
+           "uid": "mockuid000000000000030"
+          },
+          {
+           "kind": "record",
+           "name": "Record record 18",
+           "path": "/Folder shared folder 5/Folder folder 2/Folder folder 3/Record record 18",
+           "record_type": "login",
+           "share_permissions": {
+            "users": [
+             {
+              "email": "service.account@example.com",
+              "permissions": [
+               "OW"
+              ]
+             }
+            ]
+           },
+           "uid": "mockuid000000000000031"
+          }
+         ],
+         "kind": "folder",
+         "name": "Folder folder 3",
+         "path": "/Folder shared folder 5/Folder folder 2/Folder folder 3",
+         "uid": "mockuid000000000000032"
+        },
+        {
+         "kind": "record",
+         "name": "Record record 19",
+         "path": "/Folder shared folder 5/Folder folder 2/Record record 19",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000033"
+        }
+       ],
+       "kind": "folder",
+       "name": "Folder folder 2",
+       "path": "/Folder shared folder 5/Folder folder 2",
+       "uid": "mockuid000000000000034"
+      },
+      {
+       "children": [
+        {
+         "kind": "record",
+         "name": "Record record 20",
+         "path": "/Folder shared folder 5/Folder folder 5/Record record 20",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000010"
+        },
+        {
+         "kind": "record",
+         "name": "Record record 21",
+         "path": "/Folder shared folder 5/Folder folder 5/Record record 21",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000035"
+        }
+       ],
+       "kind": "folder",
+       "name": "Folder folder 5",
+       "path": "/Folder shared folder 5/Folder folder 5",
+       "uid": "mockuid000000000000036"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 22",
+       "path": "/Folder shared folder 5/Record record 22",
+       "record_type": "databaseCredentials",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000037"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 23",
+       "path": "/Folder shared folder 5/Record record 23",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user9@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000038"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 5",
+     "path": "/Folder shared folder 5",
+     "share_permissions": {
+      "record_permissions": [
+       "CS"
+      ],
+      "user_permissions": [
+       "MR"
+      ],
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "RO"
+        ],
+        "uid": "mockuid000000000000018"
+       },
+       {
+        "email": "user7@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000019"
+       },
+       {
+        "email": "user23@example.com",
+        "permissions": [
+         "MU"
+        ],
+        "uid": "mockuid000000000000039"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000040"
+    },
+    {
+     "children": [
+      {
+       "kind": "record",
+       "name": "Record record 24",
+       "path": "/Folder shared folder 6/Record record 24",
+       "record_type": "databaseCredentials",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000041"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 25",
+       "path": "/Folder shared folder 6/Record record 25",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000042"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 6",
+     "path": "/Folder shared folder 6",
+     "share_permissions": {
+      "record_permissions": [
+       "RO"
+      ],
+      "user_permissions": [],
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000043"
+    },
+    {
+     "children": [
+      {
+       "kind": "nested_record",
+       "name": "Record nested record 1",
+       "path": "/Folder nested share folder 1/Record nested record 1",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         },
+         {
+          "email": "user7@example.com",
+          "permissions": [
+           "SM"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000044"
+      },
+      {
+       "kind": "nested_record",
+       "name": "Record nested record 2",
+       "path": "/Folder nested share folder 1/Record nested record 2",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         },
+         {
+          "email": "user7@example.com",
+          "permissions": [
+           "SM"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000045"
+      }
+     ],
+     "kind": "nested_share_folder",
+     "name": "Folder nested share folder 1",
+     "path": "/Folder nested share folder 1",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user7@example.com",
+        "permissions": [
+         "SM"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000046"
+    },
+    {
+     "children": [
+      {
+       "kind": "nested_record",
+       "name": "Record nested record 3",
+       "path": "/Folder nested share folder 2/Record nested record 3",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user4@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000047"
+      }
+     ],
+     "kind": "nested_share_folder",
+     "name": "Folder nested share folder 2",
+     "path": "/Folder nested share folder 2",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000048"
+    },
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "kind": "nested_record",
+         "name": "Record nested record 4",
+         "path": "/Folder nested share folder 3/Folder nested share folder 4/Record nested record 4",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           },
+           {
+            "email": "user23@example.com",
+            "permissions": [
+             "VW"
+            ]
+           },
+           {
+            "email": "user7@example.com",
+            "permissions": [
+             "FM"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000049"
+        }
+       ],
+       "kind": "nested_share_folder",
+       "name": "Folder nested share folder 4",
+       "path": "/Folder nested share folder 3/Folder nested share folder 4",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         },
+         {
+          "email": "user7@example.com",
+          "permissions": [
+           "FM"
+          ]
+         },
+         {
+          "email": "user23@example.com",
+          "permissions": [
+           "VW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000050"
+      },
+      {
+       "kind": "nested_record",
+       "name": "Record nested record 5",
+       "path": "/Folder nested share folder 3/Record nested record 5",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         },
+         {
+          "email": "user7@example.com",
+          "permissions": [
+           "FM"
+          ]
+         },
+         {
+          "email": "user23@example.com",
+          "permissions": [
+           "VW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000051"
+      },
+      {
+       "kind": "nested_record",
+       "name": "Record nested record 6",
+       "path": "/Folder nested share folder 3/Record nested record 6",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user7@example.com",
+          "permissions": [
+           "VW"
+          ]
+         },
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         },
+         {
+          "email": "user23@example.com",
+          "permissions": [
+           "VW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000052"
+      },
+      {
+       "kind": "nested_record",
+       "name": "Record nested record 7",
+       "path": "/Folder nested share folder 3/Record nested record 7",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         },
+         {
+          "email": "user23@example.com",
+          "permissions": [
+           "VW"
+          ]
+         },
+         {
+          "email": "user7@example.com",
+          "permissions": [
+           "FM"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000053"
+      }
+     ],
+     "kind": "nested_share_folder",
+     "name": "Folder nested share folder 3",
+     "path": "/Folder nested share folder 3",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user7@example.com",
+        "permissions": [
+         "FM"
+        ]
+       },
+       {
+        "email": "user23@example.com",
+        "permissions": [
+         "VW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000054"
+    },
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "kind": "record",
+         "name": "Record record 26",
+         "path": "/Folder shared folder 7/Folder folder 6/Record record 26",
+         "record_type": "login",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "service.account@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000055"
+        }
+       ],
+       "kind": "folder",
+       "name": "Folder folder 6",
+       "path": "/Folder shared folder 7/Folder folder 6",
+       "uid": "mockuid000000000000056"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 27",
+       "path": "/Folder shared folder 7/Record record 27",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user7@example.com",
+          "permissions": [
+           "CE"
+          ]
+         },
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000057"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 28",
+       "path": "/Folder shared folder 7/Record record 28",
+       "record_type": "serverCredentials",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user5@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000058"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 7",
+     "path": "/Folder shared folder 7",
+     "share_permissions": {
+      "record_permissions": [],
+      "user_permissions": [
+       "MU",
+       "MR"
+      ],
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       },
+       {
+        "email": "user5@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000059"
+       },
+       {
+        "email": "user30@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000060"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000061"
+    },
+    {
+     "children": [
+      {
+       "kind": "record",
+       "name": "Record record 29",
+       "path": "/Folder shared folder 8/Record record 29",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user3@example.com",
+          "permissions": [
+           "RO"
+          ]
+         },
+         {
+          "email": "user4@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000062"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 8",
+     "path": "/Folder shared folder 8",
+     "share_permissions": {
+      "record_permissions": [],
+      "user_permissions": [
+       "MU",
+       "MR"
+      ],
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000063"
+       },
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000064"
+    },
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "kind": "record",
+         "name": "Record record 30",
+         "path": "/Folder shared folder 9/Folder folder 7/Record record 30",
+         "record_type": "driverLicense",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "user5@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000065"
+        }
+       ],
+       "kind": "folder",
+       "name": "Folder folder 7",
+       "path": "/Folder shared folder 9/Folder folder 7",
+       "uid": "mockuid000000000000066"
+      },
+      {
+       "children": [
+        {
+         "kind": "record",
+         "name": "Record record 31",
+         "path": "/Folder shared folder 9/Folder folder 8/Record record 31",
+         "record_type": "serverCredentials",
+         "share_permissions": {
+          "users": [
+           {
+            "email": "user5@example.com",
+            "permissions": [
+             "OW"
+            ]
+           }
+          ]
+         },
+         "uid": "mockuid000000000000067"
+        }
+       ],
+       "kind": "folder",
+       "name": "Folder folder 8",
+       "path": "/Folder shared folder 9/Folder folder 8",
+       "uid": "mockuid000000000000068"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 9",
+     "path": "/Folder shared folder 9",
+     "share_permissions": {
+      "record_permissions": [],
+      "user_permissions": [
+       "MU",
+       "MR"
+      ],
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       },
+       {
+        "email": "user5@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000059"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000069"
+    },
+    {
+     "children": [
+      {
+       "kind": "record",
+       "name": "Record record 32",
+       "path": "/Folder shared folder 10/Record record 32",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000070"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 33",
+       "path": "/Folder shared folder 10/Record record 33",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000071"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 34",
+       "path": "/Folder shared folder 10/Record record 34",
+       "record_type": "sshKeys",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user31@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000072"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 35",
+       "path": "/Folder shared folder 10/Record record 35",
+       "record_type": "address",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "user31@example.com",
+          "permissions": [
+           "CE",
+           "CS"
+          ]
+         },
+         {
+          "email": "user32@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000073"
+      },
+      {
+       "kind": "record",
+       "name": "Record record 36",
+       "path": "/Folder shared folder 10/Record record 36",
+       "record_type": "login",
+       "share_permissions": {
+        "users": [
+         {
+          "email": "service.account@example.com",
+          "permissions": [
+           "OW"
+          ]
+         }
+        ]
+       },
+       "uid": "mockuid000000000000074"
+      }
+     ],
+     "kind": "shared_folder",
+     "name": "Folder shared folder 10",
+     "path": "/Folder shared folder 10",
+     "share_permissions": {
+      "record_permissions": [],
+      "user_permissions": [
+       "MU",
+       "MR"
+      ],
+      "users": [
+       {
+        "email": "user29@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000017"
+       },
+       {
+        "email": "user31@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000075"
+       },
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000018"
+       },
+       {
+        "email": "user26@example.com",
+        "permissions": [
+         "MU",
+         "MR"
+        ],
+        "uid": "mockuid000000000000020"
+       }
+      ]
+     },
+     "uid": "mockuid000000000000076"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 37",
+     "path": "/Record record 37",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000077"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 38",
+     "path": "/Record record 38",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000078"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 39",
+     "path": "/Record record 39",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000079"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 40",
+     "path": "/Record record 40",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user29@example.com",
+        "permissions": [
+         "RO"
+        ]
+       },
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000080"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 41",
+     "path": "/Record record 41",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000081"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 42",
+     "path": "/Record record 42",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000082"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 43",
+     "path": "/Record record 43",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user3@example.com",
+        "permissions": [
+         "RO"
+        ]
+       },
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000083"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 8",
+     "path": "/Record nested record 8",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user33@example.com",
+        "permissions": [
+         "FM"
+        ]
+       },
+       {
+        "email": "user34@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user35@example.com",
+        "permissions": [
+         "VW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000084"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 44",
+     "path": "/Record record 44",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000085"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 45",
+     "path": "/Record record 45",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000086"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 46",
+     "path": "/Record record 46",
+     "record_type": "contact",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000087"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 47",
+     "path": "/Record record 47",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000088"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 48",
+     "path": "/Record record 48",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user21@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000089"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 49",
+     "path": "/Record record 49",
+     "record_type": "contact",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000090"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 50",
+     "path": "/Record record 50",
+     "record_type": "pamDirectory",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000091"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 51",
+     "path": "/Record record 51",
+     "record_type": "pamUser",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000092"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 52",
+     "path": "/Record record 52",
+     "record_type": "pamUser",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000093"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 53",
+     "path": "/Record record 53",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000094"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 54",
+     "path": "/Record record 54",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "CS"
+        ]
+       },
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000095"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 55",
+     "path": "/Record record 55",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000096"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 56",
+     "path": "/Record record 56",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000097"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 57",
+     "path": "/Record record 57",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000098"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 58",
+     "path": "/Record record 58",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000099"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 59",
+     "path": "/Record record 59",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000100"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 60",
+     "path": "/Record record 60",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "CE",
+         "CS"
+        ]
+       },
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user18@example.com",
+        "permissions": [
+         "CE",
+         "CS"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000101"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 61",
+     "path": "/Record record 61",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user36@example.com",
+        "permissions": [
+         "CE",
+         "CS"
+        ]
+       },
+       {
+        "email": "user37@example.com",
+        "permissions": [
+         "CE",
+         "CS"
+        ]
+       },
+       {
+        "email": "user38@example.com",
+        "permissions": [
+         "CS"
+        ]
+       },
+       {
+        "email": "user39@example.com",
+        "permissions": [
+         "CS"
+        ]
+       },
+       {
+        "email": "user40@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "CE",
+         "CS"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000102"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 9",
+     "path": "/Record nested record 9",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user18@example.com",
+        "permissions": [
+         "VW"
+        ]
+       },
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000103"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 10",
+     "path": "/Record nested record 10",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000104"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 62",
+     "path": "/Record record 62",
+     "record_type": "softwareLicense",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000105"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 63",
+     "path": "/Record record 63",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000106"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 64",
+     "path": "/Record record 64",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user33@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user41@example.com",
+        "permissions": [
+         "CE",
+         "CS"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000107"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 65",
+     "path": "/Record record 65",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user29@example.com",
+        "permissions": [
+         "RO"
+        ]
+       },
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user30@example.com",
+        "permissions": [
+         "RO"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000108"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 66",
+     "path": "/Record record 66",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000109"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 67",
+     "path": "/Record record 67",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000110"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 68",
+     "path": "/Record record 68",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000111"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 69",
+     "path": "/Record record 69",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000112"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 70",
+     "path": "/Record record 70",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000113"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 71",
+     "path": "/Record record 71",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000114"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 72",
+     "path": "/Record record 72",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user3@example.com",
+        "permissions": [
+         "RO"
+        ]
+       },
+       {
+        "email": "user33@example.com",
+        "permissions": [
+         "CS"
+        ]
+       },
+       {
+        "email": "user34@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user42@example.com",
+        "permissions": [
+         "RO"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000115"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 73",
+     "path": "/Record record 73",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000116"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 74",
+     "path": "/Record record 74",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user9@example.com",
+        "permissions": [
+         "RO"
+        ]
+       },
+       {
+        "email": "user11@example.com",
+        "permissions": [
+         "RO"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000117"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 11",
+     "path": "/Record nested record 11",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "FM"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000118"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 75",
+     "path": "/Record record 75",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000119"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 76",
+     "path": "/Record record 76",
+     "record_type": "wifiCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user18@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000120"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 77",
+     "path": "/Record record 77",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000121"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 78",
+     "path": "/Record record 78",
+     "record_type": "encryptedNotes",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000122"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 79",
+     "path": "/Record record 79",
+     "record_type": "membership",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000123"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 80",
+     "path": "/Record record 80",
+     "record_type": "pamUser",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000124"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 12",
+     "path": "/Record nested record 12",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user4@example.com",
+        "permissions": [
+         "FM"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000125"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 13",
+     "path": "/Record nested record 13",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000126"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 81",
+     "path": "/Record record 81",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000127"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 82",
+     "path": "/Record record 82",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000128"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 83",
+     "path": "/Record record 83",
+     "record_type": "pamDatabase",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000129"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 84",
+     "path": "/Record record 84",
+     "record_type": "pamMachine",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000130"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 14",
+     "path": "/Record nested record 14",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user32@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user38@example.com",
+        "permissions": [
+         "FM"
+        ]
+       },
+       {
+        "email": "user40@example.com",
+        "permissions": [
+         "FM"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000131"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 85",
+     "path": "/Record record 85",
+     "record_type": "pamRemoteBrowser",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000132"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 86",
+     "path": "/Record record 86",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000133"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 15",
+     "path": "/Record nested record 15",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000134"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 16",
+     "path": "/Record nested record 16",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000135"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 17",
+     "path": "/Record nested record 17",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000136"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 87",
+     "path": "/Record record 87",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000137"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 88",
+     "path": "/Record record 88",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000138"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 18",
+     "path": "/Record nested record 18",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000139"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 89",
+     "path": "/Record record 89",
+     "record_type": "sshKeys",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000140"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 19",
+     "path": "/Record nested record 19",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user3@example.com",
+        "permissions": [
+         "VW"
+        ]
+       },
+       {
+        "email": "user21@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user7@example.com",
+        "permissions": [
+         "CM"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000141"
+    },
+    {
+     "kind": "nested_record",
+     "name": "Record nested record 20",
+     "path": "/Record nested record 20",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user21@example.com",
+        "permissions": [
+         "OW"
+        ]
+       },
+       {
+        "email": "user3@example.com",
+        "permissions": [
+         "VW"
+        ]
+       },
+       {
+        "email": "user7@example.com",
+        "permissions": [
+         "CSM"
+        ]
+       },
+       {
+        "email": "user23@example.com",
+        "permissions": [
+         "VW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000142"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 90",
+     "path": "/Record record 90",
+     "record_type": "contact",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000143"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 91",
+     "path": "/Record record 91",
+     "record_type": "softwareLicense",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000144"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 92",
+     "path": "/Record record 92",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000145"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 93",
+     "path": "/Record record 93",
+     "record_type": "membership",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000146"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 94",
+     "path": "/Record record 94",
+     "record_type": "encryptedNotes",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000147"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 95",
+     "path": "/Record record 95",
+     "record_type": "serverCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000148"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 96",
+     "path": "/Record record 96",
+     "record_type": "sshKeys",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000149"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 97",
+     "path": "/Record record 97",
+     "record_type": "databaseCredentials",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "service.account@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000150"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 98",
+     "path": "/Record record 98",
+     "record_type": "softwareLicense",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user5@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000151"
+    },
+    {
+     "kind": "record",
+     "name": "Record record 99",
+     "path": "/Record record 99",
+     "record_type": "login",
+     "share_permissions": {
+      "users": [
+       {
+        "email": "user5@example.com",
+        "permissions": [
+         "OW"
+        ]
+       }
+      ]
+     },
+     "uid": "mockuid000000000000152"
+    }
+   ],
+   "kind": "folder",
+   "name": "My Vault",
+   "path": "/"
+  }
+ },
+ "status": "success"
+}

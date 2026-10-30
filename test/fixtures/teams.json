@@ -1,0 +1,34 @@
+{
+ "command": "enterprise-info --teams",
+ "data": [
+  {
+   "name": "Team 1",
+   "node": "Example Org\\Node 2",
+   "queued_user_count": 0,
+   "queued_users": [],
+   "restricts": "     ",
+   "role_count": 0,
+   "roles": [],
+   "team_uid": "mockuid000000000000001",
+   "user_count": 1,
+   "users": [
+    "user9@example.com"
+   ]
+  },
+  {
+   "name": "Team 2",
+   "node": "Example Org\\Node 2",
+   "queued_user_count": 0,
+   "queued_users": [],
+   "restricts": "     ",
+   "role_count": 0,
+   "roles": [],
+   "team_uid": "mockuid000000000000002",
+   "user_count": 1,
+   "users": [
+    "user18@example.com"
+   ]
+  }
+ ],
+ "status": "success"
+}
